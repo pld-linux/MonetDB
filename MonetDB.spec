@@ -1,8 +1,4 @@
 #
-# Conditional build:
-%bcond_with	tests		# build with tests
-%bcond_without	tests		# build without tests
-#
 Summary:	Fast database engine
 Name:		MonetDB
 Version:	4.8.2
@@ -16,6 +12,15 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Fast database engine
+
+%package devel
+Summary:	Header files for MonetDB
+Summary(pl):	Pliki nag³ówkowe MonetDB
+Group:		Development/Libraries
+#Requires:	%{name} = %{version}-%{release}
+
+%description devel
+This is the package containing the header files for MonetDB.
 
 %prep
 %setup -q
@@ -40,7 +45,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %dir %{_libdir}/%{name}
 %{_libdir}/%{name}/*.mil
-%{_libdir}/%{name}/tests
 %attr(755,root,root) %{_libdir}/%{name}/*.so.*
 %attr(755,root,root) %{_libdir}/*.so.*
 %attr(755,root,root) %{_libdir}/php/*.so.*
@@ -62,13 +66,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/%{name}/conf
 %attr(755,root,root) %{_libdir}/php/*.la
 %{_libdir}/autogen/*.py
-/usr/lib/perl5/vendor_perl/5.8.0/i686-pld-linux-thread-multi/DBD/monetdb.pm
-/usr/lib/perl5/vendor_perl/5.8.0/i686-pld-linux-thread-multi/DBD/monetdb/GetInfo.pm
-/usr/lib/perl5/vendor_perl/5.8.0/i686-pld-linux-thread-multi/DBD/monetdb/TypeInfo.pm
-/usr/lib/perl5/vendor_perl/5.8.0/i686-pld-linux-thread-multi/MapiLib.la
-/usr/lib/perl5/vendor_perl/5.8.0/i686-pld-linux-thread-multi/MapiLib.pm
-/usr/lib/perl5/vendor_perl/5.8.0/i686-pld-linux-thread-multi/MapiLib.so.0.0.0   /usr/lib/php/monetdb.la
-/usr/lib/python2.4/site-packages/CMapi.py
-/usr/lib/python2.4/site-packages/MapiLib.py
-/usr/lib/python2.4/site-packages/_MapiLib.la
-/usr/lib/python2.4/site-packages/_MapiLib.so.0.0.0
