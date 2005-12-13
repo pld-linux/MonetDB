@@ -8,6 +8,7 @@ Group:		Applications
 Source0:	http://dl.sourceforge.net/monetdb/%{name}-%{version}.tar.gz
 # Source0-md5:	3fafd56f98a02859b04762ab3d601e37
 URL:		http://monetdb.cwi.nl/
+BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -69,7 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-#%doc AUTHORS CREDITS ChangeLog NEWS README THANKS TODO
+%doc HowToStart README
 %{_sysconfdir}/MonetDB.conf
 %attr(755,root,root) %{_bindir}/*
 %attr(755,root,root) %{_libdir}/*.so.*.*.*
