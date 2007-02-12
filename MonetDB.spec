@@ -1,5 +1,5 @@
 Summary:	Fast database engine
-Summary(pl):	Szybki silnik baz danych
+Summary(pl.UTF-8):   Szybki silnik baz danych
 Name:		MonetDB
 Version:	4.8.2
 Release:	1
@@ -22,30 +22,30 @@ areas for using traditional database technology in a real-time manner.
 MonetDB has been successfully applied in high-performance applications
 for data mining, OLAP, GIS, XML Query, text and multimedia retrieval.
 
-%description -l pl
-MonetDB to wysokowydajny system baz danych o otwartych ¼ród³ach
+%description -l pl.UTF-8
+MonetDB to wysokowydajny system baz danych o otwartych ÅºrÃ³dÅ‚ach
 tworzony w CWI - Institute for Mathematics and Computer Science
 Research of The Netherlands (Instytucie Matematyki i Nauk
-Informatycznych Holandii). Zosta³ zaprojektowany aby zapewniæ wysok±
-wydajno¶æ przy z³o¿onych zapytaniach dla du¿ych baz danych, np.
-³±cz±cych tabele z setkami kolumn i wieloma milionami wierszy. Jako
-taki MonetDB mo¿e byæ u¿ywany w takich zastosowaniach aplikacyjnych, w
-których tradycyjne technologie bazodanowe nie sprawdza³y siê w czasie
-rzeczywistym. MonetDB zosta³ z sukcesem zastosowanych w
-wysokowydajnych aplikacjach z zakresu górnistwa, OLAP, GIS, zapytañ
-XML, przetwarzania tekstu i multimediów.
+Informatycznych Holandii). ZostaÅ‚ zaprojektowany aby zapewniÄ‡ wysokÄ…
+wydajnoÅ›Ä‡ przy zÅ‚oÅ¼onych zapytaniach dla duÅ¼ych baz danych, np.
+Å‚Ä…czÄ…cych tabele z setkami kolumn i wieloma milionami wierszy. Jako
+taki MonetDB moÅ¼e byÄ‡ uÅ¼ywany w takich zastosowaniach aplikacyjnych, w
+ktÃ³rych tradycyjne technologie bazodanowe nie sprawdzaÅ‚y siÄ™ w czasie
+rzeczywistym. MonetDB zostaÅ‚ z sukcesem zastosowanych w
+wysokowydajnych aplikacjach z zakresu gÃ³rnistwa, OLAP, GIS, zapytaÅ„
+XML, przetwarzania tekstu i multimediÃ³w.
 
 %package devel
 Summary:	Header files for MonetDB
-Summary(pl):	Pliki nag³ówkowe MonetDB
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe MonetDB
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 This is the package containing the header files for MonetDB.
 
-%description devel -l pl
-Ten pakiet zawiera pliki nag³ówkowe MonetDB.
+%description devel -l pl.UTF-8
+Ten pakiet zawiera pliki nagÅ‚Ã³wkowe MonetDB.
 
 %prep
 %setup -q
