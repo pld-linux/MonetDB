@@ -1,5 +1,5 @@
 Summary:	Fast database engine
-Summary(pl.UTF-8):   Szybki silnik baz danych
+Summary(pl.UTF-8):	Szybki silnik baz danych
 Name:		MonetDB
 Version:	4.8.2
 Release:	1
@@ -37,7 +37,7 @@ XML, przetwarzania tekstu i multimediów.
 
 %package devel
 Summary:	Header files for MonetDB
-Summary(pl.UTF-8):   Pliki nagłówkowe MonetDB
+Summary(pl.UTF-8):	Pliki nagłówkowe MonetDB
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
